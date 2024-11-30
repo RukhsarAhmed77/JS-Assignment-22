@@ -1,35 +1,129 @@
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+body{
+    overflow-x: hidden;
 }
-  
-.card-img-top {
-    object-fit: cover;
-    height: 200px;
+
+header{
+    position: fixed;
     width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-  
-.card-body {
-    flex: 1;
+
+.btn2{
+    font-weight: 600;
+    font-size: large;
+    border-radius: 20px;
 }
-  
- 
-  
-.input-group {
-    margin-bottom: 1rem;
+
+main{
+    position: relative;
+    padding-top: 150px;
 }
-  
-.card-title {
-    font-size: 1.1rem;
-    font-weight: bold;
+
+.form-select{
+    width: 40%;
 }
-  
-.card-body .card-text {
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+
+.form-control{
+    width: 40%;
 }
-  
-.card-body .card-text .text-muted {
-    font-size: 0.8rem;
-}  
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.logo_div{
+    margin-right: 50px;
+}
+
+
+.caro img {
+    object-fit: cover;
+    width: 80%;
+    margin: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+.categories-section img {
+  width: 50%;
+}
+
+.cat{
+    transition: 0.3s;
+}
+
+.cat:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text-decoration-none{
+    font-weight: 600;
+}
+
+.card{
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card img {
+  height: 150px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 992px) {
+    .main_head{
+        justify-content: space-evenly !important;
+    }
+    .logo{
+        width: 100px;
+    }
+    .form-control{
+        width: 100%;
+    }
+    .form-select{
+        display: none;
+    }
+    .btn2{
+        padding: 8px 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo_div{
+        margin-right: 0;
+    }
+    nav{
+        display: none;
+    }
+    .btn2{
+        padding: 8px 10px;
+    }
+    .logo{
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main_head{
+        justify-content: space-between !important;
+    }
+    .form-select{
+        display: none;
+    }
+    .form-control{
+        display: none;
+    }
+    .btn1{
+        display: none;
+    }
+}
